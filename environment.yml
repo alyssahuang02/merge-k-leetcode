@@ -1,0 +1,6 @@
+name: mergek
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+prefix: /Users/alyssahuang/miniconda/envs/mergek
