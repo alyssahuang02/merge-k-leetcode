@@ -27,3 +27,18 @@ def mergeKLists(lists):
             current.next = ListNode(min[0])
             current = current.next
     return head
+
+def createLinkedLists(lists):
+    res = []
+    for list in lists:
+        head = ListNode(list[0])
+        cur = head
+        for val in list[1:]:
+            cur.next = ListNode(val)
+            cur = cur.next
+        res.append(head)
+    return res
+
+lists = createLinkedLists([[1,4,5],[1,3,4],[2,6]])
+# lists = createLinkedLists([[]])
+result = mergeKLists(lists)
